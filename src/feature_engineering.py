@@ -9,7 +9,8 @@ def build_student_features(df):
         "has_disability": "max",
         "disability_type": "first",
         "country": "first",
-        "year": "first"
+        "year": "first",
+        "education_level": "first"
     })
     
     student_df.columns = [
@@ -23,7 +24,8 @@ def build_student_features(df):
         "has_disability",
         "disability_type",
         "country",
-        "year"
+        "year",
+        "education_level"
     ]
     # attendance rate 
     student_df["attendance_rate"] = student_df["total_days"] / 15 # course lasts 15 days
