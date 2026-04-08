@@ -1,6 +1,13 @@
 import streamlit as st
 import pandas as pd
-
+import sys 
+import os
+from pathlib import Path
+BASE_DIR = Path(__file__).resolve().parent
+PROJECT_ROOT = BASE_DIR.parent
+DATA_PATH = PROJECT_ROOT / "data" / "processed" / "student_level.csv"
+#sys.path.append(os.path.abspath(".."))
+#print(os.getcwd())
 st.set_page_config(page_title="Program Impact Dashboard", layout="wide")
 
 st.title("Educational Program Impact Dashboard")
@@ -8,7 +15,7 @@ st.markdown("Analyze program performance, engagement, and equity outcomes")
 
 @st.cache_data
 def load_data():
-    return pd.read_csv("../data/processed/student_level.csv")
+    return pd.read_csv(DATA_PATH)
 
 df = load_data()
 st.sidebar.header("Filters")
