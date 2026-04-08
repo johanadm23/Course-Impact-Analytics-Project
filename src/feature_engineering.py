@@ -1,6 +1,6 @@
 def build_student_features(df):
     student_df = df.groupby("student_id").agg({
-        "attendance": "mean",
+        "day": "count",  # attendance signal
         "engagement_score": ["mean", "std"],
         "difficulty": "mean",
         "completion": "max",
@@ -13,7 +13,7 @@ def build_student_features(df):
     })
     
     student_df.columns = [
-        "attendance_rate",
+        "total_days",
         "avg_engagement",
         "engagement_variability",
         "avg_difficulty",
@@ -25,5 +25,7 @@ def build_student_features(df):
         "country",
         "year"
     ]
+    # attendance rate 
+    student_df["attendance_rate"] = student_df["total_days"] / 15 # course lasts 15 days
     
     return student_df.reset_index()
