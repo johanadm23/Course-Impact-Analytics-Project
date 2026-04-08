@@ -139,7 +139,7 @@ These features capture **behaviour, consistency, and progression over time**.
 
 ---
 
-## 📏 Metrics
+## Metrics
 
 The project defines standardised metrics for program evaluation:
 
@@ -192,19 +192,6 @@ streamlit run dashboard/app.py
 
 ---
 
-## Impact Report
-
-The project includes a structured impact report with:
-
-* Executive summary
-* Key findings
-* Data-driven recommendations
-* Equity and accessibility analysis
-
-This mirrors real-world **nonprofit impact reporting**.
-
----
-
 ## Key Highlights
 
 * End-to-end **data ownership pipeline**
@@ -235,7 +222,7 @@ pip install -r requirements.txt
 
 ## Motivation
 
-This project was designed to reflect the challenges of analysing educational program data in a global, inclusive environment. It emphasizes not just technical skills, but also:
+This project was designed to reflect the challenges of analysing educational program data in a global, inclusive environment. It emphasises not just technical skills, but also:
 
 * clarity in communication
 * responsibility in handling sensitive data
