@@ -20,4 +20,4 @@ class MetricsCalculator:
         return grouped.max() - grouped.min()
 
     def avg_satisfaction(self):
-        return self["satisfaction"].mean()
+        return self.df["satisfaction"].mean()
