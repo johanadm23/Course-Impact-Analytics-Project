@@ -19,5 +19,5 @@ class MetricsCalculator:
         grouped = self.df.groupby(col)["completion"].mean()
         return grouped.max() - grouped.min()
 
-    def avg_satisfaction(df):
+    def avg_satisfaction(self):
         return df["satisfaction"].mean()
