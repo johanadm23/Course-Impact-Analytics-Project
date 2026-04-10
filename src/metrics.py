@@ -18,3 +18,6 @@ class MetricsCalculator:
     def equity_gap(self, col):
         grouped = self.df.groupby(col)["completion"].mean()
         return grouped.max() - grouped.min()
+
+    def avg_satisfaction(df):
+        return df["satisfaction"].mean()
