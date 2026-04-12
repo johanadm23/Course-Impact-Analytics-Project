@@ -177,12 +177,12 @@ The analysis focuses on:
 
 ## Dashboard
 
-An interactive dashboard (Streamlit) provides:
-
-* High-level program metrics
-* Trends over time
-* Group comparisons
-* Equity and accessibility insights
+An interactive dashboard (Streamlit) was developed to 
+* Analyse program performance
+* Identify dropout patterns
+* Evaluate equity across participant groups.
+* Integrates multi-source data and
+* Provides insights for improving retention and accessibility.
 
 Run locally:
 
